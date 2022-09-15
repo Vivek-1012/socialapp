@@ -12,3 +12,19 @@ heartIcon.addEventListener("click", () => {
     }
 
 })
+
+
+//post like
+
+let likeBtn = document.querySelector('.like-btn');
+let likeImg = document.querySelector('.like-icon');
+
+likeBtn.addEventListener("click", () => {
+    if(likeBtn.scroll.includes('nofill')){
+        likeImg.classList.add('show');
+    }
+
+    setTimeout( () => {
+        likeImg.classList.remove('show');
+    }, 3000); 
+})

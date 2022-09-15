@@ -256,6 +256,10 @@ body{
     color: #bbb;
 }
 
+#coment-input:focus{
+    outline: 1px solid #2f2f2f;
+}
+
 .add-comment-btn {
     display: flex;
     justify-content: center;
@@ -271,15 +275,56 @@ body{
     height: 30px;
 }
 
+.comment-count{
+    font-weight: 600;
+    color: #a0a0a0;
+    font-size: flex;
+    margin-top: 10px;
+    opacity: 0.7;
 
+}
 
+.post-overlays{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
 
+}
 
+.like-icon{
+    width: 200px;
+    opacity: 0;
+    transition: .5s;
+   
+}
 
+.like-icon.show{
+    opacity: 1;
+    animation: popup 2s forwards 1;
+}
 
-
-
-
+@keyframes popup{
+    0%{
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(1.1)
+    }
+    80%{
+        transform: scale(0.9);
+    
+    }
+    90%{
+        transform: scale(0.95)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 
 
