@@ -326,7 +326,54 @@ body{
     }
 }
 
+.share-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+    transition: .5s;
+    opacity: 0;
+}
 
+.share-window.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.share-window .title{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.share-link-container{
+    width: 100%;
+    display: flex;
+    border: 1px solid #999 ;
+}
+
+
+#share-link {
+    height: 40px;
+    padding: 10px;
+    background: #fafafa;
+    border: none;
+    color: #999;
+    width: 100%;
+}
+
+.copy-btn {
+    background: #80c2ff88;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #1886ec;
+    text-transform: capitalize;
 
 
 

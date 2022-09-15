@@ -27,8 +27,39 @@ likeBtn.addEventListener("click", () => {
         likeImg.classList.add('show');
     }
     changeIcon(likeBtn);
-    
+
     setTimeout(() => {
         likeImg.classList.remove('show');
     }, 3000); 
 })
+
+
+// post share 
+
+
+let shareBTn = document.querySelector(".send-btn");
+let shareWindow = document.querySelector(".share-window")
+
+shareBTn.addEventListener("click", ()=>{
+    shareWindow.classList.toggle('active');
+    changeIcon(shareBTn)
+
+})
+
+let postLink = document.querySelector("#share-link").value ;
+let copyLinkbtn = document.querySelector(".copy-btn");
+
+copyLinkbtn.addEventListener("click", ()=> {
+  navigator.clipboard.writeText(postLink).then(()=> {
+    shareBTn.click();
+  })
+})
+
+
+
+
+
+
+
+
+
