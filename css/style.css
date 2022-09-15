@@ -461,7 +461,18 @@ body{
 }
 
 
-
+.follow-btn{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    background: #59afff;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: 1px solid #3086d6;
+    cursor: pointer;
+}
 
 
 
