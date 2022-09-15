@@ -17,14 +17,18 @@ const changeIcon = (icon) => {
     }
 }
 
-//post like
+const addInteractionsToPost = (post) => {
+    //post like
 
-let likeBtn = document.querySelector('.like-btn');
-let likeImg = document.querySelector('.like-icon');
+let likeBtn = post.querySelector('.like-btn');
+let likeImg = post.querySelector('.like-icon');
 
 likeBtn.addEventListener("click", () => {
     if(likeBtn.src.includes('nofill')){
         likeImg.classList.add('show');
+        if(shareBTn.src.includes('-fill')){
+            shareBTn.click();
+        }
     }
     changeIcon(likeBtn);
 
@@ -37,8 +41,8 @@ likeBtn.addEventListener("click", () => {
 // post share 
 
 
-let shareBTn = document.querySelector(".send-btn");
-let shareWindow = document.querySelector(".share-window")
+let shareBTn = post.querySelector(".send-btn");
+let shareWindow = post.querySelector(".share-window")
 
 shareBTn.addEventListener("click", ()=>{
     shareWindow.classList.toggle('active');
@@ -46,14 +50,22 @@ shareBTn.addEventListener("click", ()=>{
 
 })
 
-let postLink = document.querySelector("#share-link").value ;
-let copyLinkbtn = document.querySelector(".copy-btn");
+let postLink = post.querySelector("#share-link").value ;
+let copyLinkbtn = post.querySelector(".copy-btn");
 
 copyLinkbtn.addEventListener("click", ()=> {
   navigator.clipboard.writeText(postLink).then(()=> {
     shareBTn.click();
   })
 })
+
+}
+
+// post
+
+let posts = [...document.querySelectorAll(".post")];
+posts.map(post => addInteractionsToPost(post));
+
 
 
 
