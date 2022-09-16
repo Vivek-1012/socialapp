@@ -1,0 +1,42 @@
+.post {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75vh;
+      display: flex;
+}
+
+.post-feed {
+    width: 350%;
+    height: 100%;
+}
+
+.post-detail {
+    padding-top: 0;
+}
+
+.feed {
+    position: relative;
+    padding-bottom: 40px;
+    overflow-y: scroll;
+}
+
+.coment-box{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    border: none;
+    border-top: 1px solid #999;
+    background: #fff;
+    z-index: 2;
+
+}
+
+#coment-input{
+    border: 1[x solid #999];
+}
