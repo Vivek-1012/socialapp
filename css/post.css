@@ -19,7 +19,7 @@
 
 .feed {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 5%;
     overflow-y: scroll;
 }
 
@@ -27,7 +27,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 50%;
+    width: 33%;
     padding: 10px;
     height: auto;
     border: none;
@@ -38,5 +38,41 @@
 }
 
 #coment-input{
-    border: 1[x solid #999];
+    border: 1x solid #999;
 }
+
+.comments-container{
+    width: calc(100% + 30px);
+    background: #fafafa;
+    margin-left: -12px;
+    padding: 20px;
+}
+
+.comment-card{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.comment-card .user-dp {
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+
+}
+
+.comment-card .username{
+    font-size: 0.8rem;
+    opacity: .5;
+
+}
+
+.comment{
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
+
+
