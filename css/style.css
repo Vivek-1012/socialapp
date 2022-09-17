@@ -476,3 +476,8 @@ body{
 
 
 
+.user1-dp{
+    height: 50px;
+    width: 50px;
+    border-radius: 2rem;
+}
