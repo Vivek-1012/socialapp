@@ -23,7 +23,7 @@ const addInteractionsToPost = (post) => {
 let likeBtn = post.querySelector('.like-btn');
 let likeImg = post.querySelector('.like-icon');
 
-likeBtn.addEventListener("click", () => {
+likeBtn.addEventListener('click', () => {
     if(likeBtn.src.includes('nofill')){
         likeImg.classList.add('show');
         if(shareBTn.src.includes('-fill')){
