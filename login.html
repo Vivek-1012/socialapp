@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link src="./index.html"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/post.css" />
+    <link rel="stylesheet" href="./css/user.css">
+   <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%
+        }
+        button:hover{
+            opacity: 0.8;;
+        }
+
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.avatar{
+            width: 30%;
+            border-radius: 50%;
+        }
+        .modal{
+            background-color: black;
+            overflow: auto;
+            padding-top: 60px;
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: 1;
+            position: fixed;
+        }
+        .modal-content{
+            background-color: white;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 80%;
+            padding: 1rem;
+        }
+
+        .container{
+            padding: 16px;
+            
+        }
+
+        span.psw{
+            float: right;
+            padding-top: 16px;
+        }
+        .login{
+            text-decoration: none;
+            color: white;
+        }
+        .forget{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal-content animate">
+    <form>
+        <div class="imgcontainer">
+    <img src="./image/image.jpg" alt="" class="avatar" />
+         </div>
+         <div class="container">
+    <br />
+    <label for="">
+        Username
+    </label>
+    <input type="text" placeholder="Username" />
+    <br/>
+    <label for="">
+        Password
+    </label>
+    <input type="password" placeholder="Password" />
+    <br />
+    <input type="checkbox">Remember me
+    <button > <a class="login" href="./index.html">Login</a></button>
+    <div class="forget">
+    <label>
+        <p>Forget ? <a href="#"></a> </p>
+    </label>
+    <label>
+        <p>No account?<a href="http://">Sign up</a></p>
+    </label>
+</div>
+ 
+</div>
+</form>
+</div>
+</body>
+</html>
